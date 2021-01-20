@@ -1,3 +1,5 @@
+//* README Template
+
 const templateMarkDown = (input) =>
   `# ${input.title}
 
