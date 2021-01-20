@@ -5,6 +5,7 @@ const markdownTemplate = require("./markdownTemplate");
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
+// * Function to grab user input
 const getUserInfo = () => {
   return inquirer.prompt([
     {
@@ -30,8 +31,8 @@ const getUserInfo = () => {
     {
       type: "checkbox",
       name: "license",
-      message: "What type of license does your project need?",
-      choices: ["MIT", "Apache 2.0", "none"],
+      message: "What type of license does your project use?",
+      choices: ["MIT", "Apache 2.0", "GNU GPLv3", "BSD-3", "MPL 2.0", "None"],
     },
     {
       type: "input",
@@ -56,6 +57,7 @@ const getUserInfo = () => {
   ]);
 };
 
+// * Function to create README
 const generateReadMe = async () => {
   try {
     const answers = await getUserInfo();
