@@ -1,0 +1,23 @@
+{
+  "name": "READ-all-about-ME",
+  "version": "1.0.0",
+  "description": "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jbrown827/READ-all-about-ME.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jbrown827/READ-all-about-ME/issues"
+  },
+  "homepage": "https://github.com/jbrown827/READ-all-about-ME#readme",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
