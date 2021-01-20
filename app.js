@@ -55,3 +55,17 @@ const getUserInfo = () => {
     },
   ]);
 };
+
+const generateReadMe = async () => {
+  try {
+    const answers = await getUserInfo();
+    const markDown = markdownTemplate(answers);
+
+    writeFileAsync("TELLME.md", markDown);
+    console.log("Success generating TELLME.md");
+  } catch (err) {
+    console.log(err);
+  }
+};
+
+generateReadMe();

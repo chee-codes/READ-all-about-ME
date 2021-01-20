@@ -13,7 +13,6 @@ const templateMarkDown = (input) =>
 ## Description
 ${input.description}
 
-
 ${input.license}
 
 ## Installation
@@ -29,7 +28,7 @@ If you have any further questions please contact me via
 
 GitHub: [${input.username}](https://github.com/${input.username})
 
-or 
+or
 
 Email: ${input.email}.
 `;
